@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" const="text/html;charset=UTF-8" />
+    <link href="http://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="main.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Simple Chat App</title>
+  </head>
+    <body>
+        <header>
+            <h1>Chat en tiempo real</h1>
+        </header>
+    <section>
+      <div id="change_username">
+	      <input id="username" type="text" />
+	      <button id="send_username" type="button">Elegir username</button>
+        
+        <input id="des_username" type="text" />
+        <button id="send_destiny" type="button">Elegir username destino</button>
+    
+    </section>
+
+    <section id="chatroom">
+      <section id="feedback"></section>
+    </section>
+
+    <section id="input_zone"> 
+      <input id="message" class="vertical-align" type="text" />
+      <button type="submit" id="send_message" type="button" class="vertical-align">Send</button>
+      <input type="file" id="file" name="file" class="custom-file-input"/> 
+    </section>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="message.js"></script>
+  </body>
